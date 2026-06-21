@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="39d510c7-66d9-45ea-a505-3bc656eca85f" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="1" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "GuavaDealer"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/MineKotLang/MineKot-Template-Project-Base.git",
+    "accountId": "ea5a7e0e-ec4d-41e4-b7e3-ea64d29eee71"
+  }
+}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.875600870804338E-9" />
+      <entry key="MS500" value="0.01797333274110169" />
+      <entry key="S2" value="0.3783143145304191" />
+      <entry key="S5" value="0.8409314738110507" />
+      <entry key="S10" value="1.2550744133254275" />
+      <entry key="S30" value="2.231109257261465" />
+      <entry key="S60" value="3.3859459397784444" />
+      <entry key="M2" value="4.695032389372074" />
+      <entry key="M5" value="7.006661422613626" />
+      <entry key="M10" value="10.158665775304613" />
+      <entry key="M15" value="12.251064567000542" />
+      <entry key="M30" value="15.350877158772859" />
+      <entry key="H1" value="17.437753401172824" />
+      <entry key="H2" value="18.652827426783634" />
+      <entry key="H4" value="19.30899011782564" />
+      <entry key="D1" value="19.882330199211207" />
+      <entry key="W1" value="19.98312767472301" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000000287885807" />
+      <entry key="S2" value="1.0231635478531507" />
+      <entry key="S5" value="1.2220652403484233" />
+      <entry key="S10" value="1.4936064129673219" />
+      <entry key="S30" value="2.2600992513016847" />
+      <entry key="S60" value="3.019873091693876" />
+      <entry key="M2" value="3.7922655283942426" />
+      <entry key="M5" value="5.652811826400051" />
+      <entry key="M10" value="8.924401680838319" />
+      <entry key="M15" value="11.220197893802448" />
+      <entry key="M30" value="14.696381909587704" />
+      <entry key="H1" value="17.067101549225455" />
+      <entry key="H2" value="18.45534088096595" />
+      <entry key="H4" value="19.207026078576252" />
+      <entry key="D1" value="19.864872676454056" />
+      <entry key="W1" value="19.98062217436687" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.0080509572614486E-6" />
+      <entry key="MS500" value="0.06320023714700655" />
+      <entry key="S2" value="0.5677965223413459" />
+      <entry key="S5" value="1.371364598175688" />
+      <entry key="S10" value="2.247537661506024" />
+      <entry key="S30" value="4.197440438124315" />
+      <entry key="S60" value="6.188530937180131" />
+      <entry key="M2" value="8.342701795041757" />
+      <entry key="M5" value="12.580664332703371" />
+      <entry key="M10" value="19.02939468066452" />
+      <entry key="M15" value="23.428874182255438" />
+      <entry key="M30" value="30.021025890761337" />
+      <entry key="H1" value="34.490005706076694" />
+      <entry key="H2" value="37.10023385790781" />
+      <entry key="H4" value="38.511910578205566" />
+      <entry key="D1" value="39.746498386094736" />
+      <entry key="W1" value="39.96364869901992" />
+    </decayedShown>
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3FRYIwFcUXY4Qavx4k4rEC0xclg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cidr.known.project.marker": "true",
+    "code.cleanup.on.save": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kobweb-plugin-state": "DISABLED",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/mnt/PortableSSD/Documents/code/__Minecraft/MineKot/Repositories/MineKot-Template-Project-Base",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "com.intellij.mcpserver.settings",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="MineKot-Template-Project-Base" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.25134.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="39d510c7-66d9-45ea-a505-3bc656eca85f" name="Changes" comment="" />
+      <created>1782039272982</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782039272982</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
