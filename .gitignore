@@ -4,6 +4,7 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+.intellijPlatform/
 
 ### IntelliJ IDEA ###
 *.iws
@@ -45,6 +46,7 @@ bin/
 .env
 /.local/
 /final/*
+SCRATCHPAD.md
 
 ### AI Agents ###
 .junie/
@@ -53,4 +55,5 @@ bin/
 .antigravitycli/
 
 ### run ###
-/run/
+run/
+run-*/

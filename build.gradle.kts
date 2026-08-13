@@ -1,62 +1,81 @@
 plugins {
-    `java-library`
-    `maven-publish`
     alias(libs.plugins.kotlin.jvm)
-    alias(libs.plugins.kotlin.serialization)
-    alias(libs.plugins.shadow)
+    alias(libs.plugins.minekot.toolchain)
 }
-
 
 group = project.findProperty("group")?.toString() ?: missingProperty("group")
 version = project.findProperty("version")?.toString() ?: missingProperty("version")
 val projectJavaVersion = 21
 
-kotlin.jvmToolchain(projectJavaVersion)
+@Suppress("GradleDslConventions")
+val cleanFinalArtifacts = tasks.register<Delete>("cleanFinalArtifacts") {
+    description = "Cleans the final directory with a backup of the previous state"
+    val finalFile = layout.projectDirectory.dir("final").asFile
+    val backupFile = layout.projectDirectory.dir("final_bak").asFile
+
+    doFirst {
+        if (finalFile.listFiles()?.isEmpty() != false) return@doFirst
+
+        backupFile.deleteRecursively()
+        finalFile.copyRecursively(target = backupFile, overwrite = true)
+    }
+    delete(finalFile)
+}
 
 repositories {
     mavenCentral()
-    gradlePluginPortal()
-    mavenLocal()
 }
 
-dependencies {
-    implementation(libs.bundles.kotlin.core)
-    implementation(libs.bundles.adventure)
-    testImplementation(libs.bundles.testing)
-}
-
-configure<JavaPluginExtension> {
-    withSourcesJar()
+minekotToolchain {
+    toolchainVersion = libs.versions.minekot.toolchain
+    build {
+        javaVersion = projectJavaVersion
+        allWarningsAsErrors = true
+    }
+    publishing {
+        enabled = false
+    }
+    shadow {
+        enabled = true
+        classifier = "all"
+        mergeServiceFiles = true
+    }
+    lint {
+        enabled = true
+        configFile = rootProject.layout.projectDirectory.file("config/detekt/minekot.yml")
+    }
+    ciCd {
+        enabled = true
+    }
 }
 
 tasks {
-    jar {
-        dependsOn(shadowJar)
+    withType<Test>().configureEach {
+        jvmArgs("-Xshare:off")
+        systemProperty("minekot.rootDir", rootProject.projectDir.absolutePath)
     }
 
-    shadowJar {
-        archiveClassifier.set("")
-        archiveFileName.set("${project.name}-${project.version}.jar")
-        destinationDirectory.set(file("${rootDir}/final"))
-
-        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-        mergeServiceFiles()
+    withType<Jar>().configureEach {
+        if (name == "jar") {
+            dependsOn("shadowJar")
+        }
+        if (name == "shadowJar") {
+            mustRunAfter(":cleanFinalArtifacts")
+            (this as? com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar)?.destinationDirectory =
+            rootProject.layout.projectDirectory.dir("final")
+            archiveFileName = "${project.name}-${project.version}.jar"
+        }
+        if (name == "sourcesJar") {
+            mustRunAfter(":cleanFinalArtifacts")
+            destinationDirectory = rootProject.layout.projectDirectory.dir("final")
+            archiveFileName = "${project.name}-${project.version}-sources.jar"
+        }
     }
 
-    processResources {
-        from("${rootDir}") { include("NOTICE", "LICENSE") }
-    }
-
-    publishToMavenLocal {
-        dependsOn("sourcesJar")
-    }
-
-    test {
-        useJUnitPlatform()
-    }
-
-    build {
-        dependsOn("publishToMavenLocal")
+    withType<Task>().configureEach {
+        if (name == "build") {
+            dependsOn(":cleanFinalArtifacts")
+        }
     }
 }
 
